@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings"
+    android:background="#DAF6F3"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp">
+        <Button
+            android:id="@+id/btn_resetPas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Change password"
+            android:background="@drawable/btn_profileupdate"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#D30606"
+            app:cardCornerRadius="12dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            >
+
+            <Button
+                android:id="@+id/sharefromStg"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                android:background="@drawable/share1"/>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#D30606"
+            app:cardCornerRadius="12dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            >
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/rate_us"/>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+    
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp">
+    <Button
+        android:id="@+id/btn_logOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOG OUT"
+        android:background="@drawable/btn_profileupdate"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Version\n1.0.0"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Made By\n Nikhil"
+            android:textSize="16sp"
+            android:layout_alignParentEnd="true"
+            android:paddingEnd="5dp"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

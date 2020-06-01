@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1FAF6"
+    tools:context=".Subjects.TeacherList">
+
+    <ListView
+        android:id="@+id/TeacherList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp">
+
+        <EditText
+            android:id="@+id/Input"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Search User......"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:onClick="addItem"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="0dp"
+            />
+
+        <Button
+            android:id="@+id/find21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find"
+            android:onClick="findItems"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"
+            />
+
+        <Button
+            android:id="@+id/delete31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="deleteItem"
+           android:layout_alignParentEnd="true"
+            android:layout_marginTop="40dp"
+            android:text="Delete"
+
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>

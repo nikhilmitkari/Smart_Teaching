@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Subjects.AdminHome"
+    android:background="#D9F4F1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#DAFAF7">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/baloo_paaji"
+            android:text="WELCOME"
+            android:textColor="@color/design_default_color_error"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/aclonica"
+            android:text="Admin"
+            android:textColor="@color/design_default_color_secondary_variant"
+            android:textSize="50sp" />
+
+        <Button
+            android:id="@+id/RegTeacher"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_rectangle"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:text="Add Teacher"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/ViewTeacher"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_rectangle"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:text="Teacher List"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/ViewStudent"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_rectangle"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:text="Students List"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/Notify"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_rectangle"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:text="Send Notice"
+            android:textSize="20sp"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/CheckRevenue"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_rectangle"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:text="My Revenue"
+            android:textSize="20sp"
+            android:layout_marginBottom="12dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

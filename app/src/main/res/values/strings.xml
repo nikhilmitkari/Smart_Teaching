@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">kc_Academy</string>
+    <string name="class_prompt">Select your class</string>
+
+    <string-array name="class_arrays">
+
+        <item>Class1</item>
+        <item>Class2</item>
+        <item>Class3</item>
+        <item>Class4</item>
+        <item>Class5</item>
+        <item>Class6</item>
+        <item>Class7</item>
+        <item>Class8</item>
+        <item>Class9</item>
+        <item>Class10</item>
+        <item>Class11</item>
+        <item>Class12</item>
+
+    </string-array>
+    <string name="pattern_prompt">Select your pattern</string>
+
+    <string-array name="pattern_arrays">
+
+        <item>CBSE</item>
+        <item>MAHARASHTRA STATE BOARD</item>
+
+    </string-array>
+    <string name="subject_prompt">Select Subject</string>
+    <string-array name="subject_arrays">
+
+        <item>English</item>
+        <item>History</item>
+        <item>Geography</item>
+        <item>Maths</item>
+        <item>Science</item>
+        <item>Physics</item>
+        <item>Chemistry</item>
+        <item>Biology</item>
+
+    </string-array>
+
+
+    <!-- Preference Titles -->
+
+    <!-- Messages Preferences -->
+
+    <!-- Sync Preferences -->
+
+    //extra
+    <string name="kc_academy">My Application</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="let_your_friends_know_how_much_you_enjoy_this_app">Let your friends know how much you enjoy this app</string>
+    <string name="register_now">REGISTER NOW!</string>
+    <string name="phone_no">PHONE NO</string>
+    <string name="email_address">EMAIL ADDRESS</string>
+    <string name="full_name">FULL NAME</string>
+    <string name="password">PASSWORD</string>
+    <string name="gender">GENDER</string>
+    <string name="age">AGE</string>
+    <string name="already_registered_click_here">Already registered? Click here</string>
+    <string name="create_an_account">Create an Account</string>
+
+
+    <string name="backbutton">Are you sure,you want to Exit from App?</string>
+    <string name="yes_dialog">Yes</string>
+    <string name="no_dialog">No</string>
+
+    <string name="note">*Kindly Select the class, pattern and subject \nbefore uploading document</string>
+    <string name="checkout_some_free_resources_like_notes_nvideos_and_tests_added_by_your_institute">Checkout some free resources like notes, videos and tests added by your institute</string>
+    <string name="free_study_material">Free Study Material</string>
+    <string name="complete_your_profile_to_know_you_better_by_updating_information">Complete your profile to know you better by updating information......</string>
+</resources>

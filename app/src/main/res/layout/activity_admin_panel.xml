@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Subjects.AdminPanel"
+    android:background="#D9F8F5"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/aladin"
+        android:padding="12dp"
+        android:shadowColor="#42423F"
+        android:shadowDx="12"
+        android:shadowDy="12"
+        android:shadowRadius="8"
+        android:text="Welcome Admin!"
+        android:textColor="#AC0202"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/admin1"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/macondo_swash_caps"
+        android:text="Enter Your Security Code!"
+        android:textAlignment="center"
+        android:textColor="#C51162"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        app:passwordToggleEnabled="true"
+        android:layout_gravity="center"
+        android:background="@drawable/borderline"
+        android:layout_marginTop="12dp"
+        >
+
+        <EditText
+            android:id="@+id/key"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:hint="Enter Your Security Key.........."
+            android:inputType="textPassword"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Enter"
+        android:layout_gravity="center"
+        android:background="@drawable/gradient_color"/>
+
+    <TextView
+        android:id="@+id/go_teacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="30dp"
+        android:fontFamily="@font/cherry_cream_soda"
+        android:text="Not an Admin?"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp" />
+</LinearLayout>

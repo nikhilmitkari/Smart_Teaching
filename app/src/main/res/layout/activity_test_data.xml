@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home.TestData"
+    android:orientation="vertical"
+    android:background="#DAFAF7">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/borderline"
+        android:padding="12dp">
+
+
+
+        <Spinner
+            android:id="@+id/spinner11"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:entries="@array/class_arrays"
+            android:prompt="@string/pattern_prompt" />
+
+        <View
+            android:layout_width="200dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="35dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorAccent"/>
+
+        <Spinner
+            android:id="@+id/spinner21"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:entries="@array/pattern_arrays"
+            android:prompt="@string/pattern_prompt" />
+
+        <View
+            android:layout_width="200dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="85dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorAccent"/>
+
+        <Spinner
+            android:id="@+id/spinner31"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:entries="@array/subject_arrays"
+            android:prompt="@string/subject_prompt" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="dataFromFirebase"
+        android:background="@drawable/btn_profileupdate"
+        android:text="Show"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

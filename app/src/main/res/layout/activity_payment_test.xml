@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentTest"
+    android:background="#D4F8F4"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Name"
+        android:id="@+id/name"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/amount_et"
+       android:text="cost"
+        android:textSize="18sp"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/note"
+        android:hint="Remark"
+        android:layout_gravity="center"/>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:id="@+id/send"
+        android:layout_marginTop="20dp"
+        android:text="Pay Now"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

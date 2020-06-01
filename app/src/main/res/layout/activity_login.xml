@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DAF6F3"
+    tools:context=".LoginActivity"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="217dp"
+        android:layout_height="240dp"
+        app:srcCompat="@drawable/student045"
+        android:layout_gravity="center"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+
+        >
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textEmailAddress"
+        android:layout_gravity="center"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:passwordToggleEnabled="true"
+        android:layout_gravity="center"
+        >
+
+    <EditText
+        android:id="@+id/rt_pass"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:autoLink="all|email"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remember Me!"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center" />
+
+    <Button
+        android:id="@+id/btn_signin"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+       android:layout_gravity="center"
+        android:background="@drawable/btn_profileupdate"
+        android:text="Sign In"
+        android:textSize="25sp"
+         />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Not Registered yet? Sign Up here!"
+        android:textSize="17sp"
+        android:textStyle="bold"
+         />
+
+    <TextView
+        android:id="@+id/resetpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="11dp"
+        android:text="Forget Your password?"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

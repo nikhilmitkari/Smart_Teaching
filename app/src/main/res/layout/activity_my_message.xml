@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home.MyMessage"
+    android:background="#DCF6F3">
+
+    <TextView
+        android:id="@+id/textViewData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/aladin"
+        android:gravity="left"
+        android:text="Your Notifications will appear Here!"
+        android:textColor="@color/gradient_start_color"
+        android:textSize="25sp"
+        tools:ignore="RtlHardcoded" />
+
+</RelativeLayout>

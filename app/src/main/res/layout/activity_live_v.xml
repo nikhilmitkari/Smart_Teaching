@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".LiveV"
+    android:orientation="vertical">
+
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <VideoView
+        android:id="@+id/player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        />
+</FrameLayout>
+
+
+
+    <TextView
+        android:id="@+id/videoname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Video Name"
+        android:layout_marginTop="30dp"
+        android:textSize="30sp"
+        />
+
+</LinearLayout>

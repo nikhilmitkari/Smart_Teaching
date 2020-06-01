@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#DAF6F3"
+    >
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="148dp"
+        android:layout_gravity="center"
+        android:lines="2"
+        android:maxLines="2"
+        android:text="Let's setup your \nAccount"
+        android:textAlignment="center"
+        android:textColor="#00BFA5"
+        android:textSize="30sp"
+        android:textStyle="bold"
+         />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Choose account type"
+        android:textColor="@color/intro_description_color"
+        android:textSize="18sp"
+        android:textStyle="bold"
+         />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="50dp">
+
+    <ImageButton
+        android:id="@+id/Student"
+        android:layout_width="60dp"
+        android:layout_height="85dp"
+        app:srcCompat="@drawable/student02"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/teacherlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/Teacher"
+        android:layout_width="60dp"
+        android:layout_height="85dp"
+        app:srcCompat="@drawable/teacher01"
+        style="@style/Widget.AppCompat.Button.Borderless"/>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teacher"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        />
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

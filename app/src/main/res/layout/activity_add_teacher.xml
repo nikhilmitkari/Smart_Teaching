@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Subjects.AddTeacher"
+    android:background="#D4FDF8">
+
+
+    <LinearLayout
+        android:id="@+id/form"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:background="@drawable/borderline"
+        android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Register Teacher"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/FullName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:drawableStart="@drawable/ic_action_user"
+        android:ems="10"
+        android:hint="@string/full_name"
+        android:inputType="textPersonName"
+        />
+
+    <EditText
+        android:id="@+id/PhoneNo"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:drawableStart="@drawable/ic_action_phone"
+        android:ems="10"
+        android:hint="@string/phone_no"
+        android:inputType="phone"
+
+        />
+
+    <EditText
+        android:id="@+id/EmailId"
+        android:layout_width="300dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawableStart="@drawable/ic_action_mail"
+        android:ems="10"
+        android:hint="@string/email_address"
+        android:inputType="textEmailAddress"
+        />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:drawableStart="@drawable/ic_action_pass"
+        android:ems="10"
+        android:hint="@string/password"
+        />
+
+    <EditText
+        android:id="@+id/sex"
+        android:layout_width="300dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawableStart="@drawable/ic_gender"
+        android:ems="10"
+        android:hint="@string/gender"
+        />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/form"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/gradient_color"
+        android:text="Add Teacher"
+        android:textSize="25sp"/>
+
+</RelativeLayout>

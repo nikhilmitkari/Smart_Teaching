@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kc_academy"
+    android:installLocation="preferExternal">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".Home.Myapp"
+        android:allowBackup="true"
+        android:icon="@drawable/kc"
+        android:label="@string/kc_academy"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".SelectSubject"></activity>
+        <activity android:name=".Home.MyMessage" />
+        <activity android:name=".Subjects.Notice" />
+        <activity android:name=".Subjects.StudentList" />
+        <activity android:name=".Subjects.TeacherList" />
+        <activity android:name=".Subjects.AddTeacher" />
+        <activity android:name=".Subjects.AdminHome" />
+        <activity android:name=".Subjects.AdminPanel" />
+        <activity android:name=".Home.TestData" />
+        <activity android:name=".Home.TeacherSettings" />
+        <activity android:name=".Home.TeacherNotification" />
+        <activity android:name=".Home.AddFiles" />
+        <activity android:name=".Home.TeacherProfile" />
+        <activity android:name=".Tests" />
+        <activity android:name=".Home.ThomeActivity" />
+        <activity android:name=".Home.TeacherLogin" />
+        <activity android:name=".Settings" />
+        <activity android:name=".Help" />
+        <activity android:name=".Notification" />
+        <activity android:name=".PaymentTest" />
+        <activity android:name=".LiveV" />
+        <activity android:name=".ScheduleActivity" />
+        <activity android:name=".FeedbackActivity" />
+        <activity android:name=".Videos" />
+        <activity android:name=".NotesActivity" />
+        <activity android:name=".MyprofileActivity" />
+        <activity android:name=".Eng" />
+        <activity android:name=".About" />
+        <activity android:name=".DashBoard" />
+        <activity android:name=".SplashscreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".ForgetpassActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".MainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+    </application>
+
+</manifest>

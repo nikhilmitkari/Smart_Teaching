@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditFragment"
+    android:background="#D1D8D7">
+
+    <!-- TODO: Update blank fragment layout -->
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:drawableRight="@android:drawable/ic_menu_info_details"
+            android:fontFamily="cursive"
+            android:text="My Information"
+            android:textColor="#7C0303"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/ic_action_name"
+            android:text="Name"
+            android:textSize="16sp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name001"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:drawableRight="@android:drawable/ic_menu_edit"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/ic_action_phoneedit"
+            android:text="Mobile No"
+            android:textSize="16sp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/mbno002"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@android:drawable/ic_menu_edit"
+            android:paddingStart="24dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/ic_action_email"
+            android:text="Email"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/mail002"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/ic_action_dob"
+            android:text="Date Of Birth"
+            android:textSize="16sp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dob004"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@android:drawable/ic_menu_edit"
+            android:inputType="date"
+            android:paddingLeft="24dp"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/ic_action_gender"
+            android:text="Gender"
+            android:textSize="16sp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@android:drawable/ic_menu_edit"
+            android:paddingLeft="24dp"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:drawableLeft="@drawable/ic_class"
+                    android:text="Choose your Class"
+                    android:textSize="16sp" />
+
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="230dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="38dp"
+                    android:layout_marginLeft="90dp"
+                    android:background="#C5FBF6"
+                    android:entries="@array/class_arrays"
+                    android:prompt="@string/class_prompt" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="280dp"
+                    android:layout_marginTop="38dp"
+                    android:src="@drawable/dwnarw" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:drawableLeft="@drawable/ic_pattern"
+                    android:text=" Choose your Pattern"
+                    android:textSize="16sp" />
+
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="230dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="103dp"
+                    android:layout_marginLeft="90dp"
+                    android:background="#C5FBF6"
+                    android:entries="@array/pattern_arrays"
+                    android:prompt="@string/pattern_prompt" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="280dp"
+                    android:layout_marginTop="103dp"
+                    android:src="@drawable/dwnarw" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_edit"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:text="Update"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@drawable/btn_profileupdate"/>
+
+
+    </LinearLayout>
+</ScrollView>
+
+
+</RelativeLayout>

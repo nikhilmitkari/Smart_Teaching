@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "538824296581",
+    "firebase_url": "https://kc-academy-e3831.firebaseio.com",
+    "project_id": "kc-academy-e3831",
+    "storage_bucket": "kc-academy-e3831.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:538824296581:android:4c166d96e43be30a5fc1ec",
+        "android_client_info": {
+          "package_name": "com.example.kc_academy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "538824296581-4uasqvslm4fuhn6r2qat5g233h1s31k5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIxNDpoGYR3aOFspU_2QHBItRUsrC2CWw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "538824296581-4uasqvslm4fuhn6r2qat5g233h1s31k5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

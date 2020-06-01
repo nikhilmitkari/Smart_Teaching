@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScheduleActivity">
+
+
+
+    <CalendarView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF">
+
+    </CalendarView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="340dp"
+        android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableRight="?attr/actionModePasteDrawable"
+                android:fontFamily="cursive"
+                android:text="Write your own Task...  "
+                android:textColor="#8A0303"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/stask"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="textMultiLine"
+                    android:layout_marginTop="12dp"
+                    android:lines="5"
+                    android:hint="Start Writing your schedule..."
+                    android:gravity="top"
+                    android:background="#FFFFFF"/>
+
+                <Button
+                    android:id="@+id/btn_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Save/"
+                    android:layout_gravity="right"
+                    android:background="@drawable/btn_profileupdate"/>
+
+                <ListView
+                    android:id="@+id/taskList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:divider="@android:color/holo_blue_light"
+                    android:dividerHeight="2dp">
+                </ListView>
+
+
+            </LinearLayout>
+
+</RelativeLayout>

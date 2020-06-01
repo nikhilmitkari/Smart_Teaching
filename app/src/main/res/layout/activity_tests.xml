@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tests"
+    android:background="#E2FBF8"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toTopOf="@+id/recycyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/bgheader">
+
+        <TextView
+            android:id="@+id/tvT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:text="Study Material : \nNOTES"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="67dp"
+            android:src="@drawable/studymaterial"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="40dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:paddingLeft="12dp">
+
+
+        <TextView
+            android:id="@+id/tvAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="AnswerSheet Submitted"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textColor="@color/gradient_start_color"/>
+
+        <Button
+            android:id="@+id/clkChoose"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="choose"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/btn_rectangle"
+            android:onClick="selectFile"
+            />
+
+        <Button
+            android:id="@+id/clkUpload"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Upload"
+            android:onClick="AddFiles"
+            android:background="@drawable/btn_rectangle"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycyleT"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

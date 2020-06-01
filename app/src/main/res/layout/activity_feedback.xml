@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FeedbackActivity"
+    android:orientation="vertical"
+    android:background="#D0FDF9">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_margin="12dp"
+        android:gravity="center_horizontal"
+        android:text="We hope you enjoyed our Application"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        />
+
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:layout_gravity="center"
+        android:stepSize="1"
+        android:rating="5"/>
+
+    <TextView
+        android:id="@+id/tvRatingScale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Awesome. I love it"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etfeedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="12dp"
+        android:lines="5"
+        android:hint="Tell us what you loved!"
+        android:gravity="top"
+        android:background="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#e57373"
+        android:text="Send feedback"
+        android:textColor="@android:color/white" />
+
+
+
+</LinearLayout>

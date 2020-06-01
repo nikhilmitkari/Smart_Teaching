@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About"
+    android:background="#ECFBFA">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/bgheader">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="145dp"
+            android:text="About"
+            android:textAlignment="gravity"
+            android:textColor="#000000"
+            android:textSize="32sp"
+            android:textStyle="bold|italic"
+            android:typeface="serif" />
+    </RelativeLayout>
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="200dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="149dp"
+                android:layout_marginRight="149dp"
+                android:fontFamily="cursive"
+                android:text="Follow us!"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:textStyle="bold|italic"
+                 />
+
+            <ImageView
+                android:layout_width="88dp"
+                android:layout_height="145dp"
+                android:layout_marginStart="68dp"
+                android:layout_marginLeft="68dp"
+                android:layout_marginTop="50dp"
+                app:srcCompat="@drawable/fb1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="68dp"
+                android:layout_marginEnd="47dp"
+                android:layout_marginBottom="20dp"
+                android:text=" @kcacademy\n  jawaharnagar"
+                android:textSize="18dp"
+                android:layout_marginTop="150dp" />
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="129dp"
+                android:layout_marginStart="250dp"
+                android:layout_marginLeft="104dp"
+                android:layout_marginTop="50dp"
+                app:srcCompat="@drawable/www" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="229dp"
+                android:layout_marginEnd="36dp"
+                android:layout_marginBottom="20dp"
+                android:text="http://kcacademy.\nco.in/"
+                android:textSize="18sp"
+                android:layout_marginTop="150dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="130dp"
+                android:fontFamily="cursive"
+                android:text="Office Address"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:textStyle="bold|italic"
+                android:layout_marginTop="210dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginStart="64dp"
+                android:layout_marginBottom="180dp"
+                android:layout_marginTop="255dp"
+                app:srcCompat="@drawable/comfort" />
+
+            <TextView
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="275dp"
+                android:layout_marginStart="129dp"
+                android:text="1st Floor Jai Kali Cloth Store Sawari Jawaharnagar, Jawahar Nagar, Bhandara - 441906 "
+                 />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="315dp"
+                android:layout_marginStart="130dp"
+                app:srcCompat="@drawable/wp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="330dp"
+                android:layout_marginLeft="170dp"
+                android:text="+91 7021709825"
+                 />
+
+        </RelativeLayout>
+
+
+   </ScrollView>
+
+
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/colorAccent"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu_navigation" />
+
+
+    <com.google.android.material.circularreveal.CircularRevealRelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background=""
+        >
+
+    </com.google.android.material.circularreveal.CircularRevealRelativeLayout>
+</RelativeLayout>
